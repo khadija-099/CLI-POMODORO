@@ -1,0 +1,41 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "title": "Buy organic groceries",
+      "description": "Milk, bread, eggs",
+      "priority": 3,
+      "status": "in_progress",
+      "created_at": "2025-07-09T21:42:48.131669",
+      "completed_at": null
+    },
+    {
+      "id": 3,
+      "title": "Call mom",
+      "description": "Wish happy birthday",
+      "priority": 3,
+      "status": "completed",
+      "created_at": "2025-07-09T21:43:03.694258",
+      "completed_at": "2025-07-09T21:50:50.258192"
+    },
+    {
+      "id": 1,
+      "title": "wash clothes",
+      "description": "wash sara and mine clothes",
+      "priority": 3,
+      "status": "in_progress",
+      "created_at": "2025-07-09T21:26:47.237407",
+      "completed_at": null
+    },
+    {
+      "id": 5,
+      "title": "Read book",
+      "description": "ML books",
+      "priority": 2,
+      "status": "todo",
+      "created_at": "2025-07-09T21:58:18.134667",
+      "completed_at": null
+    }
+  ],
+  "next_id": 6
+}

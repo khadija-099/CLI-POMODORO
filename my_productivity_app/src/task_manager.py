@@ -172,3 +172,14 @@ class TaskManager:
                     self.tasks.append(task)
         except Exception as e:
             print(f"Error loading data: {e}")
+
+
+
+
+
+
+
+
+
+
+
