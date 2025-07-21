@@ -5,8 +5,6 @@ from datetime import datetime
 
 
 
-
-
 class PomodoroApp:
     def __init__(self):
         self.task_manager = TaskManager()
@@ -16,14 +14,14 @@ class PomodoroApp:
     def display_banner(self):
         """Display app banner"""
         print("\n" + "="*50)
-        print("🍅 CLI POMODORO TASK MANAGER 🍅")
+        print(" CLI POMODORO TASK MANAGER ")
         print("="*50)
         
     def display_main_menu(self):
         """Display main menu options"""
         print("\n📋 MAIN MENU:")
         print("1. 📝 Task Management")
-        print("2. 🍅 Start Pomodoro Session")
+        print("2. ⚡ Start Focus Session")
         print("3. ⚙️  Settings")
         print("4. 📊 Statistics")
         print("5. 🚪 Exit")
@@ -217,7 +215,7 @@ class PomodoroApp:
             print("\n📭 No pending tasks! Add some tasks first.")
             return
             
-        print("\n🍅 START POMODORO SESSION:")
+        print("\n⚡ START POMODORO SESSION:")
         print("Select a task to work on:")
         print("0. Work without specific task")
         
@@ -269,7 +267,7 @@ class PomodoroApp:
         print(f"✅ Completed: {len(completed_tasks)}")
         print(f"⏳ To Do: {len(todo_tasks)}")
         print(f"🔄 In Progress: {len(in_progress_tasks)}")
-        print(f"🍅 Focus Sessions Today: {self.timer.session_count}")
+        print(f"⚡ Focus Sessions Today: {self.timer.session_count}")
         
         if tasks:
             completion_rate = len(completed_tasks) / len(tasks) * 100
@@ -278,7 +276,7 @@ class PomodoroApp:
     def display_settings(self):
         """Display and modify settings"""
         print("\n⚙️ SETTINGS:")
-        print(f"🍅 Focus Duration: {self.timer_settings.focus_duration // 60} minutes")
+        print(f"⚡ Focus Duration: {self.timer_settings.focus_duration // 60} minutes")
         print(f"☕ Short Break: {self.timer_settings.short_break_duration // 60} minutes")
         print(f"🛋️ Long Break: {self.timer_settings.long_break_duration // 60} minutes")
         print(f"🔄 Sessions before long break: {self.timer_settings.sessions_before_long_break}")
@@ -390,7 +388,7 @@ class PomodoroApp:
                     
                 elif choice == '5':
                     print("\n👋 Thank you for using Pomodoro Task Manager!")
-                    print("Stay productive! 🍅")
+                    print("Stay productive!")
                     break
                     
                 else:

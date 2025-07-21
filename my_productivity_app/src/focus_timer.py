@@ -49,7 +49,7 @@ class PomodoroTimer:
         self.is_running = True
         self.remaining_time = self.current_session['duration']
         
-        print(f"\n🍅 {self.current_session['type'].replace('_', ' ').title()} Session Started!")
+        print(f"\n⚡ {self.current_session['type'].replace('_', ' ').title()} Session Started!")
         print(f"Duration: {self.remaining_time // 60} minutes")
         print("Press 'Ctrl+C' to pause/quit.")
         
